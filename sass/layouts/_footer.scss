@@ -1,0 +1,124 @@
+.footer {
+  background-color: var(--background-color-footer);
+  padding: 60px 0;
+}
+.footer__container {
+  display: flex;
+  align-items: baseline;
+}
+.footer__logo {
+  display: block;
+  margin-bottom: 20px;
+  color: var(--logo-color-three);
+}
+
+.footer-contacts__link {
+  display: block;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--contact-footer-color);
+  &:focus,
+  &:hover {
+    color: var(--accent-color-two);
+  }
+  &:not(:last-child) {
+    margin-bottom: 9px;
+  }
+  &--address {
+    color: var(--address-footer-color);
+  }
+}
+
+.join-us {
+  margin-left: 70px;
+}
+.join-us__title {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--h1-color);
+}
+.join-us__social-list {
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.join-us__social-link {
+  background-color: rgba(255, 255, 255, 0.1);
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color-two);
+  }
+}
+.join-us__social-icon {
+  fill: var(--icon-color-two);
+}
+
+.subscribe {
+  margin-left: 93px;
+}
+.subscribe__text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--h1-color);
+  margin-bottom: 20px;
+}
+.subscribe__wrapper {
+  display: flex;
+}
+.subscribe__input {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: transparent;
+  width: 358px;
+  height: 50px;
+  padding: 15px 16px;
+  outline: none;
+  font-size: 16px;
+  line-height: 1.25;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03em;
+  color: var(--button-text-color);
+  &:focus {
+    border-color: var(--accent-color-two);
+  }
+  &::placeholder {
+    font-size: 16px;
+    line-height: 1.25;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+  }
+}
+
+.subscribe__btn {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  align-items: center;
+  text-align: center;
+  margin-left: 12px;
+  height: 50px;
+  padding: 10px 28px;
+  span {
+    margin-right: 10px;
+    color: inherit;
+  }
+}
+
+.subscribe__icon {
+  fill: var(--icon-color-two);
+}

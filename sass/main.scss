@@ -1,0 +1,30 @@
+@import "./utils/variables";
+@import "./base/reset";
+@import "./utils/visually-hidden";
+@import "./base/common";
+@import "./components/container";
+@import "./components/section";
+@import "./components/btn";
+@import "./base/transition";
+@import "./components/logo";
+@import "./components/social-list";
+
+//STUDIO PAGE
+
+@import "./layouts/header";
+@import "./layouts/hero";
+@import "./layouts/advantages";
+@import "./layouts/production";
+@import "./layouts/team";
+@import "./layouts/clients";
+@import "./layouts/footer";
+
+//BACKDROP
+
+@import "./components/backdrop";
+@import "./components/modal";
+
+//PORTFOLIO
+
+@import "./layouts/portfolio-filter";
+@import "./layouts/portfolio-content";

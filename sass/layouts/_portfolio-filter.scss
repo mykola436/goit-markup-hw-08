@@ -1,0 +1,26 @@
+.portfolio__filter-list {
+  margin-bottom: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.portfolio-filter__item:not(:last-child) {
+  margin-right: 8px;
+}
+.portfolio-filter__btn {
+  padding: 6px 22px;
+  background: var(--btn-color-two);
+  font-family: inherit;
+  color: inherit;
+  font-weight: 500;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+  box-shadow: none;
+  &:hover,
+  &:focus {
+    background-color: var(--button-accent-bckgrnd);
+    color: var(--button-text-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+}
