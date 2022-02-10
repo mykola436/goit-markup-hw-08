@@ -3,4 +3,13 @@
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
+  @include tel {
+    width: 480px;
+  }
+  @include tab {
+    width: 768px;
+  }
+  @include tel {
+    width: 1200px;
+  }
 }
