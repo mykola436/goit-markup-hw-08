@@ -1,6 +1,10 @@
 .production {
-  padding-top: 0;
-  background-color: var(--background-color-main);
+  display: none;
+  @include desk {
+    display: block;
+    padding-top: 0;
+    background-color: var(--background-color-main);
+  }
 }
 .production__title {
   margin-bottom: 50px;
