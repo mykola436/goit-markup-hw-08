@@ -1,4 +1,5 @@
 @import "./utils/variables";
+@import "./base/mixins";
 @import "./base/reset";
 @import "./utils/visually-hidden";
 @import "./base/common";
@@ -8,7 +9,6 @@
 @import "./base/transition";
 @import "./components/logo";
 @import "./components/social-list";
-@import "./base/mixins";
 
 //STUDIO PAGE
 
