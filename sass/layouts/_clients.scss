@@ -4,11 +4,11 @@
   text-align: center;
   letter-spacing: 0.03em;
   margin-bottom: 30px;
-  // font-size: 36px;
-  // line-height: 1.17;
-  // text-align: center;
-  // letter-spacing: 0.03em;
-  // margin-bottom: 50px;
+  @include desk {
+    font-size: 36px;
+    line-height: 1.17;
+    margin-bottom: 50px;
+  }
 }
 
 .clients__list {
@@ -46,20 +46,6 @@
       margin-bottom: 0;
     }
   }
-
-  // display: flex;
-  // justify-content: center;
-  // align-items: center;
-  // width: calc(100% / 6 - (30px - 30px / 6));
-  // min-height: 92px;
-  // margin-right: 30px;
-  // margin-bottom: 30px;
-  // &:nth-child(6n) {
-  //   margin-right: 0;
-  // }
-  // &:nth-last-child(-n + 6) {
-  //   margin-bottom: 0;
-  // }
 }
 
 .clients__link {
