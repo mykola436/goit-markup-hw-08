@@ -84,7 +84,26 @@
                     <li class="item portfolio-content__item">
                         <a class="link portfolio-content__link" href="#">
                             <div class="portfolio-content__wrapper">
-                                <img src="./images/technokryak.jpg" alt="веб-сайт Технокряк" width="370" class="portfolio-content__img">
+                                <picture>
+                                    <source srcset="
+                                        ./images/technokryak.jpg 1x,
+                                        ./images/technokryak-2x.jpg 2x
+                                        "
+                                        media="(min-width: 1200px)"
+                                        />
+                                    <source srcset="
+                                        ./images/technokryak-tab-1x.jpg 1x,
+                                        ./images/technokryak-tab-2x.jpg 2x
+                                        " media="(min-width: 768px)"
+                                    />
+                                    <source srcset="
+                                        ./images/technokryak-mob-1x.jpg 1x,
+                                        ./images/technokryak-mob-2x.jpg 2x
+                                        " media="(max-width: 767px)" 
+                                    />
+                                    <img src="./images/technokryak.jpg" alt="веб-сайт Технокряк">
+                                </picture>
+                                <!-- <img src="./images/technokryak.jpg" alt="веб-сайт Технокряк" width="370" class="portfolio-content__img"> -->
                                 <p class="portfolio-content__text">
                                     Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
                                     шпионажа и атак на защищённые сервера конкурентов.
@@ -97,8 +116,23 @@
                     <li class="item portfolio-content__item">
                         <a class="link portfolio-content__link" href="#">
                             <div class="portfolio-content__wrapper">
-                                <img src="./images/poster-new-orlean-vs-golden-star.jpg"
-                                    alt="борьба за мяч игроков Нового Орлеана И Голден Стар" width='370' class="portfolio-content__img">
+                                <picture>
+                                    <source srcset="
+                                        ./images/poster-new-orlean-vs-golden-star.jpg 1x,
+                                        ./images/poster-new-orlean-vs-golden-star-2x.jpg 2x
+                                        " media="(min-width: 1200px)" />
+                                    <source srcset="
+                                        ./images/poster-new-orlean-vs-golden-star-tab-1x.jpg 1x,
+                                        ./images/poster-new-orlean-vs-golden-star-tab-2x.jpg 2x
+                                        " media="(min-width: 768px)" />
+                                    <source srcset="
+                                        ./images/poster-new-orlean-vs-golden-star-mob-1x.jpg 1x,
+                                        ./images/poster-new-orlean-vs-golden-star-mob-2x.jpg 2x
+                                        " media="(max-width: 767px)" />
+                                    <img src="./images/poster-new-orlean-vs-golden-star.jpg" alt="борьба за мяч игроков Нового Орлеана И Голден Стар">
+                                </picture>
+                                <!-- <img src="./images/poster-new-orlean-vs-golden-star.jpg"
+                                    alt="борьба за мяч игроков Нового Орлеана И Голден Стар" width='370' class="portfolio-content__img"> -->
                                 <p class="portfolio-content__text">
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni ex, enim asperiores voluptate nam modi optio ratione eaque!
                                    </p>
@@ -110,7 +144,22 @@
                     <li class="item portfolio-content__item">
                         <a class="link portfolio-content__link" href="#">
                             <div class="portfolio-content__wrapper">
-                                <img src="./images/seafood-restoraunt.jpg" alt="Лого ресторана" width='370' class="portfolio-content__img">
+                                <picture>
+                                    <source srcset="
+                                        ./images/seafood-restoraunt.jpg 1x,
+                                        ./images/seafood-restoraunt-2x.jpg 2x
+                                        " media="(min-width: 1200px)" />
+                                    <source srcset="
+                                        ./images/seafood-restoraunt-tab-1x.jpg 1x,
+                                        ./images/seafood-restoraunt-tab-2x.jpg 2x
+                                        " media="(min-width: 768px)" />
+                                    <source srcset="
+                                        ./images/seafood-restoraunt-mob-1x.jpg 1x,
+                                        ./images/seafood-restoraunt-mob-2x.jpg 2x
+                                        " media="(max-width: 767px)" />
+                                    <img src="./images/seafood-restoraunt.jpg" alt="Лого ресторана">
+                                </picture>
+                                <!-- <img src="./images/seafood-restoraunt.jpg" alt="Лого ресторана" width='370' class="portfolio-content__img"> -->
                                 <p class="portfolio-content__text">
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis laborum earum nam odit molestias in corrupti numquam suscipit?
                                 </p>
@@ -122,7 +171,22 @@
                     <li class="item portfolio-content__item">
                         <a class="link portfolio-content__link" href="#">
                             <div class="portfolio-content__wrapper">
-                                <img src="./images/project-prime.jpg" alt="Наушники" width='370' class="portfolio-content__img">
+                                <picture>
+                                    <source srcset="
+                                                                        ./images/project-prime.jpg 1x,
+                                                                        ./images/project-prime-2x.jpg 2x
+                                                                        " media="(min-width: 1200px)" />
+                                    <source srcset="
+                                                                        ./images/project-prime-tab-1x.jpg 1x,
+                                                                        ./images/project-prime-tab-2x.jpg 2x
+                                                                        " media="(min-width: 768px)" />
+                                    <source srcset="
+                                                                        ./images/project-prime-mob-1x.jpg 1x,
+                                                                        ./images/project-prime-mob-2x.jpg 2x
+                                                                        " media="(max-width: 767px)" />
+                                    <img src="./images/project-prime.jpg" alt="Наушники">
+                                </picture>
+                                <!-- <img src="./images/project-prime.jpg" alt="Наушники" width='370' class="portfolio-content__img"> -->
                                 <p class="portfolio-content__text">
                                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente laudantium eius magnam itaque deleniti hic, iure vero similique?
                                 </p>
@@ -134,7 +198,22 @@
                     <li class="item portfolio-content__item">
                         <a class="link portfolio-content__link" href="#">
                             <div class="portfolio-content__wrapper">
-                                <img src="./images/project-boxes.jpg" alt="Две коробки" width='370' class="portfolio-content__img">
+                                <picture>
+                                    <source srcset="
+                                        ./images/project-boxes.jpg 1x,
+                                        ./images/project-boxes-2x.jpg 2x
+                                        " media="(min-width: 1200px)" />
+                                    <source srcset="
+                                        ./images/project-boxes-tab-1x.jpg 1x,
+                                        ./images/project-boxes-tab-2x.jpg 2x
+                                        " media="(min-width: 768px)" />
+                                    <source srcset="
+                                        ./images/project-boxes-mob-1x.jpg 1x,
+                                        ./images/project-boxes-mob-2x.jpg 2x
+                                        " media="(max-width: 767px)" />
+                                    <img src="./images/project-boxes.jpg" alt="Две коробки">
+                                </picture>
+                                <!-- <img src="./images/project-boxes.jpg" alt="Две коробки" width='370' class="portfolio-content__img"> -->
                                 <p class="portfolio-content__text">
                                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente laudantium eius magnam itaque deleniti hic, iure vero similique?
                                 </p>
@@ -146,7 +225,22 @@
                     <li class="item portfolio-content__item">
                         <a class="link portfolio-content__link" href="#">
                             <div class="portfolio-content__wrapper">
-                                <img src="./images/inspiration-has-no-borders.jpg" alt="Монитор с открытой страницей сайта" width='370' class="portfolio-content__img">
+                                <picture>
+                                    <source srcset="
+                                        ./images/inspiration-has-no-borders.jpg 1x,
+                                        ./images/inspiration-has-no-borders-2x.jpg 2x
+                                        " media="(min-width: 1200px)" />
+                                    <source srcset="
+                                        ./images/inspiration-has-no-borders-tab-1x.jpg 1x,
+                                        ./images/inspiration-has-no-borders-tab-2x.jpg 2x
+                                        " media="(min-width: 768px)" />
+                                    <source srcset="
+                                        ./images/inspiration-has-no-borders-mob-1x.jpg 1x,
+                                        ./images/inspiration-has-no-borders-mob-2x.jpg 2x
+                                        " media="(max-width: 767px)" />
+                                    <img src="./images/inspiration-has-no-borders.jpg" alt="Монитор с открытой страницей сайта">
+                                </picture>
+                                <!-- <img src="./images/inspiration-has-no-borders.jpg" alt="Монитор с открытой страницей сайта" width='370' class="portfolio-content__img"> -->
                                 <p class="portfolio-content__text">
                                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente laudantium eius magnam itaque deleniti hic, iure vero similique?
                                 </p>
@@ -158,7 +252,22 @@
                     <li class="item portfolio-content__item">
                         <a class="link portfolio-content__link" href="#">
                             <div class="portfolio-content__wrapper">
-                                <img src="./images/limited-edition.jpg" alt="Дизайн журнала" width='370' class="portfolio-content__img">
+                                <picture>
+                                    <source srcset="
+                                        ./images/limited-edition.jpg 1x,
+                                        ./images/limited-edition-2x.jpg 2x
+                                        " media="(min-width: 1200px)" />
+                                    <source srcset="
+                                        ./images/limited-edition-tab-1x.jpg 1x,
+                                        ./images/limited-edition-tab-2x.jpg 2x
+                                        " media="(min-width: 768px)" />
+                                    <source srcset="
+                                        ./images/limited-edition-mob-1x.jpg 1x,
+                                        ./images/limited-edition-mob-2x.jpg 2x
+                                        " media="(max-width: 767px)" />
+                                    <img src="./images/limited-edition.jpg" alt="Дизайн журнала">
+                                </picture>
+                                <!-- <img src="./images/limited-edition.jpg" alt="Дизайн журнала" width='370' class="portfolio-content__img"> -->
                                 <p class="portfolio-content__text">
                                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente laudantium eius magnam itaque deleniti hic, iure vero similique?
                                 </p>
@@ -170,7 +279,22 @@
                     <li class="item portfolio-content__item">
                         <a class="link portfolio-content__link" href="#">
                             <div class="portfolio-content__wrapper">
-                                <img src="./images/project-lab.jpg" alt="Ярлык" width='370' class="portfolio-content__img">
+                                <picture>
+                                    <source srcset="
+                                        ./images/project-lab.jpg 1x,
+                                        ./images/project-lab-2x.jpg 2x
+                                        " media="(min-width: 1200px)" />
+                                    <source srcset="
+                                        ./images/project-lab-tab-1x.jpg 1x,
+                                        ./images/project-lab-tab-2x.jpg 2x
+                                        " media="(min-width: 768px)" />
+                                    <source srcset="
+                                        ./images/project-lab-mob-1x.jpg 1x,
+                                        ./images/project-lab-mob-2x.jpg 2x
+                                        " media="(max-width: 767px)" />
+                                    <img src="./images/project-lab.jpg" alt="Ярлык">
+                                </picture>
+                                <!-- <img src="./images/project-lab.jpg" alt="Ярлык" width='370' class="portfolio-content__img"> -->
                                 <p class="portfolio-content__text">
                                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente laudantium eius magnam itaque deleniti hic, iure vero similique?
                                 </p>
@@ -182,7 +306,22 @@
                     <li class="item portfolio-content__item">
                         <a class="link portfolio-content__link" href="#">
                             <div class="portfolio-content__wrapper">
-                                <img src="./images/growing-business.jpg" alt="Работа в приложении" width='370' class="portfolio-content__img">
+                                <picture>
+                                    <source srcset="
+                                        ./images/growing-business.jpg 1x,
+                                        ./images/growing-business-2x.jpg 2x
+                                        " media="(min-width: 1200px)" />
+                                    <source srcset="
+                                        ./images/growing-business-tab-1x.jpg 1x,
+                                        ./images/growing-business-tab-2x.jpg 2x
+                                        " media="(min-width: 768px)" />
+                                    <source srcset="
+                                        ./images/growing-business-mob-1x.jpg 1x,
+                                        ./images/growing-business-mob-2x.jpg 2x
+                                        " media="(max-width: 767px)" />
+                                    <img src="./images/growing-business.jpg" alt="Работа в приложении">
+                                </picture>
+                                <!-- <img src="./images/growing-business.jpg" alt="Работа в приложении" width='370' class="portfolio-content__img"> -->
                                 <p class="portfolio-content__text">
                                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente laudantium eius magnam itaque deleniti hic, iure vero similique?
                                 </p>
