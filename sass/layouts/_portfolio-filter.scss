@@ -1,11 +1,27 @@
 .portfolio__filter-list {
-  margin-bottom: 50px;
+  // margin-bottom: 50px;
+  // display: flex;
+  // flex-wrap: wrap;
+  // justify-content: center;
+
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: start;
+  margin-bottom: 25px;
+  margin-right: -8px;
+  @include tab {
+    margin-bottom: 15px;
+    justify-content: center;
+  }
+  @include desk {
+    margin-bottom: 35px;
+  }
 }
-.portfolio-filter__item:not(:last-child) {
-  margin-right: 8px;
+.portfolio-filter__item {
+  margin-bottom: 15px;
+  &:not(:last-child) {
+    margin-right: 8px;
+  }
 }
 .portfolio-filter__btn {
   padding: 6px 22px;

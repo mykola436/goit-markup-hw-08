@@ -964,10 +964,28 @@ p,
 }
 
 .portfolio__filter-list {
-  margin-bottom: 50px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: start;
+  margin-bottom: 25px;
+  margin-right: -8px;
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio__filter-list {
+    margin-bottom: 15px;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio__filter-list {
+    margin-bottom: 35px;
+  }
+}
+
+.portfolio-filter__item {
+  margin-bottom: 15px;
 }
 
 .portfolio-filter__item:not(:last-child) {
