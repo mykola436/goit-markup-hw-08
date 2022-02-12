@@ -786,13 +786,13 @@ p,
   transition: transform 1000ms cubic-bezier(0.25, 0.57, 0.63, 0.92);
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 480px) {
   .modal {
     width: 450px;
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .modal {
     width: 528px;
   }
@@ -802,12 +802,6 @@ p,
   .modal {
     top: 0;
     transform: translate(-50%);
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .modal {
-    max-width: 528px;
   }
 }
 
@@ -943,7 +937,7 @@ p,
 }
 
 .check__icon-window {
-  width: 16px;
+  min-width: 16px;
   height: 15px;
   border: 2px solid #2a2a2a;
   border-radius: 2px;
