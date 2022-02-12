@@ -3,6 +3,7 @@
   top: 0;
   width: 100vw;
   height: 100vh;
+  overflow-y: scroll;
   background-color: rgba(0, 0, 0, 0.2);
   transition: opacity 1000ms cubic-bezier(0.25, 0.57, 0.63, 0.92),
     visibility 1000ms cubic-bezier(0.25, 0.57, 0.63, 0.92);
