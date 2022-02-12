@@ -548,6 +548,7 @@ p,
 }
 
 .team-list__img {
+  display: block;
   margin-bottom: 30px;
 }
 
