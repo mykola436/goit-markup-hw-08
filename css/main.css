@@ -363,7 +363,6 @@ p,
   left: 0;
   height: 100vh;
   width: 100vw;
-  overflow-y: scroll;
   transform: translate(0);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -396,13 +395,6 @@ p,
   }
 }
 
-@media screen and (max-height: 610px) {
-  .menu-container {
-    top: 0;
-    transform: translate(-50%);
-  }
-}
-
 .menu-close-btn {
   position: absolute;
   top: -38px;
@@ -418,7 +410,7 @@ p,
 }
 
 .menu-site-nav__item:not(:last-child) {
-  margin-bottom: 32px;
+  margin-bottom: 36px;
 }
 
 .menu-site-nav__link {
