@@ -1,6 +1,7 @@
 .header {
   background-color: var(--background-color-main);
   border-bottom: 1px solid #ececec;
+  position: relative;
 }
 .header__container {
   display: flex;
@@ -136,9 +137,55 @@
   margin-left: auto;
   &:focus,
   &:hover {
-    fill: var(--accent-color-two);
+    .menu-open-btn__icon {
+      fill: var(--accent-color-two);
+    }
   }
   @include tab {
     display: none;
+  }
+}
+.menu {
+  padding-top: 48px;
+  padding-bottom: 48px;
+  background-color: var(--background-color-main);
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+}
+.menu-container {
+  position: relative;
+  width: 100%;
+  padding-left: 40px;
+  padding-right: 40px;
+  @include tel {
+    width: 480px;
+  }
+  @include tab {
+    width: 768px;
+  }
+  @include desk {
+    width: 1200px;
+  }
+}
+.menu-close-btn {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: -38px;
+  right: 15px;
+  width: 40px;
+  height: 40px;
+  border-style: none;
+  background-color: transparent;
+  &:hover,
+  &:focus {
+    .menu-close__icon {
+      fill: var(--accent-color-two);
+    }
   }
 }
