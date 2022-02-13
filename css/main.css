@@ -145,14 +145,21 @@ p,
 
 .logo {
   font-family: "Raleway", sans-serif;
+  font-size: 24px;
+  line-height: 1.17;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
   letter-spacing: 0.03em;
 }
 
 .logo span {
   color: var(--logo-color-two);
+}
+
+@media screen and (min-width: 1200px) {
+  .logo {
+    font-size: 26px;
+    line-height: 1.19;
+  }
 }
 
 .social-list {
@@ -667,16 +674,53 @@ p,
 
 .footer {
   background-color: var(--background-color-footer);
-  padding: 60px 0;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
-.footer__container {
-  display: flex;
-  align-items: baseline;
+@media screen and (max-width: 1199px) {
+  .footer__container {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer__container {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+  }
+}
+
+.footer-links {
+  display: inline-block;
+  width: 232px;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-links {
+    margin-right: 165px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-links {
+    width: 231px;
+    margin-right: 70px;
+  }
 }
 
 .footer__logo {
-  display: block;
+  display: inline-block;
   margin-bottom: 20px;
   color: var(--logo-color-three);
 }
@@ -686,7 +730,7 @@ p,
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-size: 14px;
-  line-height: 1.71;
+  line-height: 1.5;
   letter-spacing: 0.03em;
   color: var(--contact-footer-color);
 }
@@ -696,32 +740,46 @@ p,
 }
 
 .footer-contacts__link:not(:last-child) {
-  margin-bottom: 9px;
+  margin-bottom: 8px;
 }
 
 .footer-contacts__link--address {
   color: var(--address-footer-color);
 }
 
-.join-us {
-  margin-left: 70px;
+@media screen and (min-width: 1200px) {
+  .footer-contacts__link:not(:last-child) {
+    margin-bottom: 9px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .join-us {
+    margin-top: 60px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .join-us {
+    max-width: 220px;
+  }
 }
 
 .join-us__title {
+  display: block;
   margin-bottom: 20px;
   font-weight: 700;
   font-size: 14px;
-  line-height: 1.71;
+  line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--h1-color);
 }
 
-.join-us__social-list {
-  display: flex;
-  justify-content: center;
-  margin-left: auto;
-  margin-right: auto;
+@media screen and (min-width: 1200px) {
+  .join-us__social-list {
+    justify-content: flex-start;
+  }
 }
 
 .join-us__social-link {
@@ -736,11 +794,20 @@ p,
   fill: var(--icon-color-two);
 }
 
-.subscribe {
-  margin-left: 93px;
+@media screen and (max-width: 1199px) {
+  .subscribe {
+    margin-top: 60px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .subscribe {
+    margin-left: auto;
+  }
 }
 
 .subscribe__text {
+  display: block;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -750,8 +817,15 @@ p,
   margin-bottom: 20px;
 }
 
-.subscribe__wrapper {
+.subscribe__form {
   display: flex;
+}
+
+@media screen and (max-width: 1199px) {
+  .subscribe__form {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .subscribe__input {
@@ -759,7 +833,7 @@ p,
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   background-color: transparent;
-  width: 358px;
+  width: 100%;
   height: 50px;
   padding: 15px 16px;
   outline: none;
@@ -784,12 +858,29 @@ p,
   color: rgba(255, 255, 255, 0.6);
 }
 
+@media screen and (min-width: 768px) {
+  .subscribe__input {
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .subscribe__input {
+    width: 358px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .subscribe__input {
+    margin-bottom: 20px;
+  }
+}
+
 .subscribe__btn {
   display: flex;
   flex-wrap: wrap-reverse;
   align-items: center;
   text-align: center;
-  margin-left: 12px;
   height: 50px;
   padding: 10px 28px;
 }
@@ -797,6 +888,12 @@ p,
 .subscribe__btn span {
   margin-right: 10px;
   color: inherit;
+}
+
+@media screen and (min-width: 1200px) {
+  .subscribe__btn {
+    margin-left: 12px;
+  }
 }
 
 .subscribe__icon {
