@@ -13,12 +13,25 @@
 .header__logo {
   color: var(--logo-color-one);
   margin-right: 93px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  @include tab {
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
+  @include desk {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
 }
 
 .site-nav {
-  display: flex;
-  .item:not(:last-child) {
-    margin-right: 50px;
+  display: none;
+  @include tab {
+    display: flex;
+    .item:not(:last-child) {
+      margin-right: 50px;
+    }
   }
 }
 
@@ -52,19 +65,39 @@
 }
 
 .header__contact-box {
+  display: none;
   margin-left: auto;
+  @include tab {
+    display: block;
+  }
+  @include desk {
+    display: flex;
+    align-items: baseline;
+  }
 }
 
 .header-contacts__link {
-  display: inline-flex;
-  align-items: center;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: var(--contact-header-color);
-  & + & {
-    margin-left: 30px;
+  @include tab {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    color: var(--contact-header-color);
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+  @include desk {
+    font-size: 14px;
+    line-height: 1.14;
+    &:not(:last-child) {
+      margin-bottom: 0px;
+    }
+    & + & {
+      margin-left: 30px;
+    }
   }
   &:hover,
   &:focus {
@@ -78,4 +111,17 @@
 .header-contacts__icon {
   margin-right: 10px;
   fill: var(--contact-header-color);
+  @include tab {
+    &--desk {
+      display: none;
+    }
+  }
+  @include desk {
+    &--tab {
+      display: none;
+    }
+    &--desk {
+      display: block;
+    }
+  }
 }

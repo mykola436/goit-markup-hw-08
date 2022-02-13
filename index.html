@@ -16,7 +16,7 @@
 </head>
 <body>
     <!--Шапка документа-->
-    <!-- <header class="header">
+    <header class="header">
         <div class="container header__container">
             <nav class="header-nav">
                 <a lang=en class="link logo header__logo" href="/"> <span>Web</span>Studio</a>
@@ -28,14 +28,22 @@
             </nav>
             <div class="header-contacts header__contact-box">
                 <a class="link header-contacts__link" href="mailto:info@devstudio.com">
-                    <svg class="icon header-contacts__icon" width="16" height="12">
+                    <svg class="icon header-contacts__icon header-contacts__icon--tab" width="14" height="12">
+                        <use href="./images/icons.svg#icon-envelope">
+                        </use>
+                    </svg>
+                    <svg class="icon header-contacts__icon header-contacts__icon--desk" width="16" height="12">
                         <use href="./images/icons.svg#icon-envelope">
                         </use>
                     </svg>
                     info@devstudio.com
                 </a>
                 <a class="link header-contacts__link" href="tel:+380961111111 ">
-                    <svg class="icon header-contacts__icon" width="10" height="16">
+                    <svg class="icon header-contacts__icon header-contacts__icon--tab" width="10" height="14">
+                        <use href="./images/icons.svg#icon-smartphone">
+                        </use>
+                    </svg>
+                    <svg class="icon header-contacts__icon header-contacts__icon--desk" width="10" height="16">
                         <use href="./images/icons.svg#icon-smartphone">
                         </use>
                     </svg>
@@ -43,7 +51,7 @@
                 </a>
             </div>
         </div>
-    </header> -->
+    </header>
     <main class="main">
         <!--Герой-->
         <section class="section hero">

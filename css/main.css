@@ -198,14 +198,35 @@ p,
 .header__logo {
   color: var(--logo-color-one);
   margin-right: 93px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .header__logo {
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header__logo {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
 }
 
 .site-nav {
-  display: flex;
+  display: none;
 }
 
-.site-nav .item:not(:last-child) {
-  margin-right: 50px;
+@media screen and (min-width: 768px) {
+  .site-nav {
+    display: flex;
+  }
+  .site-nav .item:not(:last-child) {
+    margin-right: 50px;
+  }
 }
 
 .site-nav__link {
@@ -239,21 +260,49 @@ p,
 }
 
 .header__contact-box {
+  display: none;
   margin-left: auto;
 }
 
-.header-contacts__link {
-  display: inline-flex;
-  align-items: center;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: var(--contact-header-color);
+@media screen and (min-width: 768px) {
+  .header__contact-box {
+    display: block;
+  }
 }
 
-.header-contacts__link + .header-contacts__link {
-  margin-left: 30px;
+@media screen and (min-width: 1200px) {
+  .header__contact-box {
+    display: flex;
+    align-items: baseline;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header-contacts__link {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    color: var(--contact-header-color);
+  }
+  .header-contacts__link:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header-contacts__link {
+    font-size: 14px;
+    line-height: 1.14;
+  }
+  .header-contacts__link:not(:last-child) {
+    margin-bottom: 0px;
+  }
+  .header-contacts__link + .header-contacts__link {
+    margin-left: 30px;
+  }
 }
 
 .header-contacts__link:hover, .header-contacts__link:focus {
@@ -267,6 +316,21 @@ p,
 .header-contacts__icon {
   margin-right: 10px;
   fill: var(--contact-header-color);
+}
+
+@media screen and (min-width: 768px) {
+  .header-contacts__icon--desk {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header-contacts__icon--tab {
+    display: none;
+  }
+  .header-contacts__icon--desk {
+    display: block;
+  }
 }
 
 .hero {
