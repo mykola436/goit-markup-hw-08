@@ -367,7 +367,10 @@ p,
 
 .menu-container {
   position: relative;
+  display: flex;
+  flex-direction: column;
   width: 100%;
+  height: 100%;
   padding-left: 40px;
   padding-right: 40px;
 }
@@ -392,9 +395,6 @@ p,
 
 .menu-close-btn {
   position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   top: -38px;
   right: 15px;
   width: 40px;
@@ -405,6 +405,108 @@ p,
 
 .menu-close-btn:hover .menu-close__icon, .menu-close-btn:focus .menu-close__icon {
   fill: var(--accent-color-two);
+}
+
+.menu-site-nav__item:not(:last-child) {
+  margin-bottom: 36px;
+}
+
+.menu-site-nav__link {
+  display: block;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.18;
+  letter-spacing: 0.02em;
+  color: var(--main-color);
+}
+
+.menu-site-nav__link--active {
+  color: var(--active-page-color);
+}
+
+.menu-site-nav__link:hover, .menu-site-nav__link:focus {
+  color: var(--accent-color-one);
+}
+
+@media screen and (max-width: 380px) {
+  .menu-site-nav__link {
+    font-size: 32px;
+  }
+}
+
+.menu-contacts {
+  margin-top: auto;
+}
+
+.menu-contacts__link {
+  display: block;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+.menu-contacts__link:hover, .menu-contacts__link:focus {
+  color: var(--accent-color-one);
+}
+
+.menu-contacts__link--tel {
+  margin-bottom: 32px;
+  font-size: 34px;
+  line-height: 1.18;
+  color: var(--accent-color-two);
+}
+
+.menu-contacts__link--mail {
+  margin-bottom: 64px;
+  font-size: 24px;
+  line-height: 1.17;
+  color: var(--paragraph-color);
+}
+
+@media screen and (max-width: 380px) {
+  .menu-contacts__link--tel {
+    font-size: 22px;
+    line-height: 1.17;
+  }
+  .menu-contacts__link--mail {
+    font-size: 18px;
+    line-height: 1.14;
+    color: var(--paragraph-color);
+  }
+}
+
+.menu-social-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -20px;
+  margin-bottom: -10px;
+}
+
+.menu-social__item {
+  position: relative;
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+
+.menu-social__item:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: -10px;
+  height: 100%;
+  width: 2px;
+  background-color: rgba(33, 33, 33, 0.2);
+}
+
+.menu-social__link {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: var(--accent-color-two);
+}
+
+.menu-social__link:hover, .menu-social__link:focus {
+  color: var(--accent-color-one);
 }
 
 .hero {
