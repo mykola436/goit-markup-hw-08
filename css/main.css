@@ -1472,6 +1472,8 @@ p,
 .portfolio-content__link {
   display: block;
   padding-bottom: 20px;
+  height: 100%;
+  width: 100%;
 }
 
 .portfolio-content__link:hover, .portfolio-content__link:focus {
